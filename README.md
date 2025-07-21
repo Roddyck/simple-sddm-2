@@ -22,38 +22,50 @@ A Simple theme variant for the <a href="https://github.com/sddm/sddm">SDDM Login
 > _Assumes that you've installed and configured SDDM correctly_ (if not [read more](https://wiki.archlinux.org/title/SDDM))
 
 >  Please make sure you have the following dependencies installed:
+
+[`sddm >= 0.21.0`](https://github.com/sddm/sddm), [`qt6 >= 6.8`](https://doc.qt.io/qt-6/index.html), [`qt6-svg >= 6.8`](https://doc.qt.io/qt-6/qtsvg-index.html), [`qt6-virtualkeyboard >= 6.8`](https://doc.qt.io/qt-6/qtvirtualkeyboard-index.html), [`qt6-multimedia >= 6.8`](https://doc.qt.io/qt-6/qtmultimedia-index.html)
+
 - [`For Arch Linux`]
-`qt6-5compat` `qt6-declarative` `qt6-svg` `sddm` 
+`sddm` `qt6-svg` `qt6-virtualkeyboard` `qt6-multimedia-ffmpeg`
 
 - [`For Fedora Linux`]
-`qt6-qt5compat` `qt6-qtdeclarative` `qt6-qtsvg` `sddm` 
+`sddm` `qt6-qtsvg` `qt6-qtvirtualkeyboard` `qt6-qtmultimedia`
 
 - [`For OpenSuse TW`]
-`qt6-qt5compat` `qt6-declarative` `qt6-svg` `sddm-qt6` 
+`sddm-qt6` `libQt6Svg6` `qt6-virtualkeyboard` `qt6-virtualkeyboard-imports` `qt6-multimedia` `qt6-multimedia-imports`  
+
 
 ## Configure
 
-Edit the or create if it does not exist `/etc/sddm.conf.d/theme.conf.user` (with any text editor with **raised** privileges), so that it looks like this:
+Edit the or create if it does not exist `/etc/sddm.conf` (with any text editor with **raised** privileges), so that it looks like this:
 
 ```bash
-sudo nano /etc/sddm.conf.d/theme.conf.user # use any text editor with raised privileges
----
+sudo nano /etc/sddm.conf # use any text editor with raised privileges
+```
 
+add this lines
+
+```sh
 [Theme]
-Current=simple-sddm-2
-   ```
+Current=simple_sddm_2
+
+[General]
+InputMethod=qtvirtualkeyboard
+
+```
+
 
 ### Language and time format
 - By default, it is configured with 24H format. You can change to AM/PM variant by editing the theme.conf
 ```bash
-sudo nano /usr/share/sddm/themes/simple-sddm-2/theme.conf  # use any text editor with raised privileges
+sudo nano /usr/share/sddm/themes/simple_sddm_2/theme.conf  # use any text editor with raised privileges
 ```
 - `HourFormat="hh:mm AP` . Make sure to disable the above of this part
 
 ### 🖼️ Default SDDM background
-- To change the default background, put desired image in the `/usr/share/sddm/themes/simple-sddm-2/Backgrounds/` folder and add the name of the image followed by its extension (`.jpg` or `.png`) in `theme.conf` file.
+- To change the default background, put desired image in the `/usr/share/sddm/themes/simple_sddm_2/Backgrounds/` folder and add the name of the image followed by its extension (`.jpg` or `.png`) in `theme.conf` file.
 
-- You can also customize it further if you wish in the `/usr/share/sddm/themes/simple-sddm-2/theme.conf`
+- You can also customize it further if you wish in the `/usr/share/sddm/themes/simple_sddm_2/theme.conf`
 (blur, form position, etc).
 
 ## Credits
