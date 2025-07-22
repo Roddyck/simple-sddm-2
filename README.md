@@ -34,6 +34,8 @@ A Simple theme variant for the <a href="https://github.com/sddm/sddm">SDDM Login
 - [`For OpenSuse TW`]
 `sddm-qt6` `libQt6Svg6` `qt6-virtualkeyboard` `qt6-virtualkeyboard-imports` `qt6-multimedia` `qt6-multimedia-imports`  
 
+- [`For Debian/ubuntu`]
+`sddm` `libqt6svg6` `qt6-virtualkeyboard-plugin` `libqt6multimedia6` `qml6-module-qtquick-controls` `qml6-module-qtquick-effects`
 
 ## Configure
 
@@ -67,6 +69,8 @@ sudo nano /usr/share/sddm/themes/simple_sddm_2/theme.conf  # use any text editor
 
 - You can also customize it further if you wish in the `/usr/share/sddm/themes/simple_sddm_2/theme.conf`
 (blur, form position, etc).
+
+
 
 ## Credits
 - Theme is based on [`LINK`](https://github.com/Keyitdev/sddm-astronaut-theme) by [**Keyitdev**](https://github.com/Keyitdev)
