@@ -1,6 +1,8 @@
 <h2 align="center">🗼 Simple SDDM Theme 2 - QT6 🗼</h2>
 
-<h1 align="center"> This will be the SDDM version 2 theme to be installed in my Hyprland Scripts</h1>
+<h1 align="center">
+    This is the fork of <a href="https://github.com/JaKooLit/simple-sddm-2">JaKooLit's simple-sddm-2 theme with gruvbox dark colors</a>
+</h1>
 
 <p align=center>
 A Simple theme variant for the <a href="https://github.com/sddm/sddm">SDDM Login Manager</a>
