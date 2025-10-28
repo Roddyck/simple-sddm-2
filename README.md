@@ -1,7 +1,7 @@
 <h2 align="center">🗼 Simple SDDM Theme 2 - QT6 🗼</h2>
 
 <h1 align="center">
-    This is the fork of <a href="https://github.com/JaKooLit/simple-sddm-2">JaKooLit's simple-sddm-2 theme with gruvbox dark colors</a>
+    This is the fork of <a href="https://github.com/JaKooLit/simple-sddm-2">JaKooLit's simple-sddm-2</a> theme with gruvbox dark colors
 </h1>
 
 <p align=center>
